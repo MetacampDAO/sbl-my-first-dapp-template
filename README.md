@@ -8,7 +8,7 @@ Step 2: Click on **solana-labs**/wallet-adapter
 
 Step 3: In the readMe file, click "For Solana Apps"
 
-Step 4: Install the dependencies
+Step 4: Install the dependencies: $ yarn install
 
 Step 5: Create a file named **Wallet.tsx** and paste the setup code provided by Solana labs
 
