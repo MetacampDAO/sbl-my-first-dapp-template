@@ -21,3 +21,21 @@ Step 8: take {children} as props and paste it inside the provider
 Step 9: Wrap <App /> with the Wallet in main.tsx file
 
 Step 10: Access connection via useConnection, and walllet via useWallet in the app.
+
+## Setup Sol Transfer Transaction
+
+Step 1: create new Transaction
+
+Step 2: create instruction using systemProgram.transfer({add required params})
+
+Step 3: Add instruction into transaction
+
+Step 4: Add recent blockhash using connection.getLatestBllockhash().blockhash
+
+Step 5: Sign transaction using wallet.signTransaction(transaction)
+
+Step 6: serialize transaction using signedTx.serialize()
+
+Step 7: send transaction using connection.sendRawTransaction(rawTransaction)
+
+Step 8: console.log(transcation signature)
