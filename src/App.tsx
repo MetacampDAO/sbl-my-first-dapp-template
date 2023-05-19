@@ -3,10 +3,7 @@ import metacamp from "./assets/metacamp.png";
 import "./App.css";
 
 function App() {
-  const sendSol = async () => {
-    // Create Tx here
-  };
-
+  const handleTransfer = async () => {};
   return (
     <>
       <div>
@@ -18,7 +15,9 @@ function App() {
         </a>
       </div>
       <h1>My First Solana dApp!</h1>
-      <button onClick={sendSol}>Send SOL</button>
+      <input type="text" placeholder="Send to" />
+      <input type="number" placeholder="Amount" />
+      <button onClick={handleTransfer}>Transfer</button>
       <div className="card">
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
